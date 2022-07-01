@@ -1,0 +1,12 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* HEADER */
+header .navbar-brand i{
+  color: #35a22c;
+}
+header .navbar-brand span{
+  font-size: 2rem;
+}

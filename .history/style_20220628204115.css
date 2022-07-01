@@ -1,0 +1,160 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+  margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+.text-white {
+  color: #fff!important;
+}
+
+/* HEADER */
+header {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+header .navbar-brand i{
+  color: #35a22c;
+  font-size:2.5rem;
+}
+header .navbar-brand span{
+  font-size: 2rem;
+}
+header ul li{
+  margin:1rem 10px;
+
+}
+header ul li.active a{
+  color: #35a22c !important;
+  
+}
+
+header ul li::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #35a22c;
+  transition: all 0.5s;
+}
+header ul li.active::after{
+  width:100%;
+}
+header ul li:hover::after{
+  width: 100%;
+  
+}
+header ul li:hover a{
+  color:#35a22c !important;
+}
+/* Carousel */
+
+.carousel{
+  position: relative;
+}
+.carousel-item{
+  height:100vh;
+  background-position:center;
+  background-size: cover;
+}
+.carousel-item:nth-child(1){
+  background-image: url(./images/finland.jpg);
+
+}
+.carousel-item:nth-child(2){
+  background-image: url(./images/mountains.jpg);
+}
+.carousel-item:nth-child(3){
+  background-image: url(./images/mountains-1.jpg);
+}
+.img__thumb{
+  width: 150px;
+  margin:auto;
+}
+.img__thumb img{
+  border-radius:50%;
+}
+.carousel-caption{
+  top: 50%;
+  transform: translateY(-50%)
+}
+.carousel-indicators li{
+  width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+/* PROJECT_----------------------------- */
+
+.title p{
+color: gray;
+}
+#project .card{
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 0 0.4rem (0 0 0/ 13%);
+}
+#project .card:hover{
+  border: 1px solid green;
+
+}
+#project .card:hover h4{
+  color: green;
+}
+#project .card img{
+  border:transparent;
+}
+.projects .nav-pills .nav-link{
+  color:black;
+  border: 1px solid black;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  background-color:green;
+}
+/* SERVICE------------- */
+#service{
+  background-image:url('./images/3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 100px 0 120px;
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+}
+#service .title{
+  color:white;
+}
+#service .title .text-white{
+  margin-bottom: 1rem;
+}
+.service__content .row .card{
+  position: relative;
+  padding: 1rem 1rem;
+  text-align: center;
+  color:white;
+  background-color:#0000005e;
+  border-radius:10px;
+  backdrop-filter: blur(3px);
+}
+#service .card .card-body i{
+  color:green;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+#service .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7,10,12,.72);
+}

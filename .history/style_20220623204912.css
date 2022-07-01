@@ -1,0 +1,50 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* HEADER */
+header .navbar-brand i{
+  color: #35a22c;
+  font-size:2.5rem;
+}
+header .navbar-brand span{
+  font-size: 2rem;
+}
+header ul li{
+  margin:1rem 10px;
+
+}
+header ul li.active a{
+  color: #35a22c !important;
+  
+}
+
+header ul li::after{
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background-color: #35a22c;
+  transition: all 0.5s;
+}
+header ul li.active::after{
+  width:100%;
+}
+header ul li:hover::after{
+  width: 100%;
+  
+}
+header ul li:hover a{
+  color:#35a22c !important;
+}
+/* Carousel */
+.carousel-item:nth-child(1){
+
+}
+.carousel-item:nth-child(2){
+
+}
+.carousel-item:nth-child(3){
+
+}
