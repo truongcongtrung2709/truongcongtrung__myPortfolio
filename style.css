@@ -9,11 +9,22 @@ h1,h2,h3,h4,h5,h6{
     line-height: 1.2;
     
 }
-.text-white {
-  color: #fff!important;
+.text__white {
+  color: #fff;
+}
+.text__gray {
+  color: gray;
 }
 
-/* HEADER */
+
+
+
+
+/* HEADER ------------------------*/
+
+
+
+
 header {
   position: absolute;
   left: 50%;
@@ -22,18 +33,20 @@ header {
 }
 header .navbar-brand i{
   color: #35a22c;
-  font-size:2.5rem;
+  font-size:2.75rem;
 }
 header .navbar-brand span{
-  font-size: 2rem;
+  font-size: 2.25rem;
 }
 header ul li{
   margin:1rem 10px;
 
 }
-header ul li.active a{
-  color: #35a22c !important;
-  
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+  color: #35a22c; 
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
 }
 
 header ul li::after{
@@ -54,11 +67,27 @@ header ul li:hover::after{
 header ul li:hover a{
   color:#35a22c !important;
 }
-/* Carousel */
+
+
+
+
+
+
+
+
+
+
+/* Carousel ----------*/
+
+
+
+
+
 
 .carousel{
   position: relative;
 }
+
 .carousel-item{
   height:100vh;
   background-position:center;
@@ -74,8 +103,15 @@ header ul li:hover a{
 .carousel-item:nth-child(3){
   background-image: url(./images/mountains-1.jpg);
 }
+.carousel-item h1{
+  font-size: 3.25rem;
+  font-weight: 400;
+}
+.carousel-item p{
+  font-size:1.5rem;
+}
 .img__thumb{
-  width: 150px;
+  width: 140px;
   margin:auto;
 }
 .img__thumb img{
@@ -85,12 +121,33 @@ header ul li:hover a{
   top: 50%;
   transform: translateY(-50%)
 }
+.carousel-indicators{
+  bottom: 10%;
+}
 .carousel-indicators li{
-  width: 13px;
+    width: 13px;
     height: 13px;
     border-radius: 50%;
 }
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #35a22c;
+}
+.carousel__overlay{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(39,43,54,.5);
+}
+
+
 /* PROJECT_----------------------------- */
+.project__content a{
+
+}
+
 
 .title p{
 color: gray;
@@ -101,13 +158,19 @@ color: gray;
   overflow: hidden;
   text-align: center;
   box-shadow: 0 0 0.4rem (0 0 0/ 13%);
+  border: transparent;
+}
+#project .card h4{
+  font-size: 1.2rem;
+  font-weight: 400;
 }
 #project .card:hover{
-  border: 1px solid green;
-
+  border: 1px solid #35a22c;
+  transition: all 1s;
 }
 #project .card:hover h4{
-  color: green;
+  color: #35a22c;
+  transition: all 1s;
 }
 #project .card img{
   border:transparent;
@@ -117,9 +180,22 @@ color: gray;
   border: 1px solid black;
 }
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-  background-color:green;
+  background-color:#35a22c;
+  border: transparent;
 }
+.project__content li{
+  margin-right: 10px;
+}
+.project__content a {
+  border: 1px solid black;
+  color: black;
+}
+
+
 /* SERVICE------------- */
+
+
+
 #service{
   background-image:url('./images/3.jpg');
   background-repeat: no-repeat;
@@ -134,17 +210,25 @@ color: gray;
   color:white;
   position: relative;
 }
-#service .title .text-white{
-  margin-bottom: 1rem;
+#service .title p{
+  margin-top:1rem;
+  margin-bottom: 4rem;
+  color:white;
 }
 .service__content .row .card{
   position: relative;
-  padding: 1rem 1rem;
+  padding: 3rem 1rem;
   text-align: center;
   color:white;
-  background-color:#0000005e;
+  background-color:rgba(255,255,255,.1);
   border-radius:10px;
   backdrop-filter: blur(3px);
+  border: 1px solid rgba(255,255,255,.1);
+}
+.service__content .row .card:hover{
+  background:black;
+  border: 1px solid white;
+  transition: all 1s;
 }
 #service .card i{
   color:green;
@@ -159,7 +243,14 @@ color: gray;
     height: 100%;
     background-color: rgba(7,10,12,.72);
 }
+
+
+
 /* ----------EDU------------------- */
+
+
+
+
 #edu{
   padding:70px 0;
   position: relative;
