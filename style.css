@@ -302,12 +302,12 @@ color: gray;
 }
 
 /* ----------------Reponsive----------------- */
-@media screen and (max-width: 575px){
+@media screen and (max-width: 576px){
   header .navbar-brand i {
-    font-size: 1rem;
+    font-size: 2rem;
   }
   header .navbar-brand span{
-    font-size: 1rem;
+    font-size: 2rem;
   }
 .carousel .carousel-indicators{
     bottom: 0;
@@ -319,9 +319,18 @@ color: gray;
   #service .service__content .card{
     margin: 2rem 2rem;
   }
+  #edu .bg__edu{
+    background-size: cover;
+  }
+  #edu  .award__right{
+    flex-direction: column;
+    padding: 45px;
 }
-@media screen and (max-width: 767px){
- 
+
+@media screen and (max-width: 768px){
+  header .container{
+    width: 100%;
+  }
 .carousel .carousel-indicators{
     bottom: 0;
   }
@@ -330,8 +339,11 @@ color: gray;
     width: 80%;
   }
   #service .service__content .card{
-    margin: 2rem 2rem;
+    margin: 4rem 4rem;
   }
+  #edu  .award__right{
+    flex-direction: column;
+    padding: 45px;
 }
 @media screen and (max-width: 991px){
   #service .service__content{
