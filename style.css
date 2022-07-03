@@ -16,14 +16,7 @@ h1,h2,h3,h4,h5,h6{
   color: gray;
 }
 
-
-
-
-
 /* HEADER ------------------------*/
-
-
-
 
 header {
   position: absolute;
@@ -41,6 +34,9 @@ header .navbar-brand span{
 header ul li{
   margin:1rem 10px;
 
+}
+header .navbar-toggler {
+  background-color: #35a22c;
 }
 .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
   color: #35a22c; 
@@ -71,17 +67,7 @@ header ul li:hover a{
 
 
 
-
-
-
-
-
-
 /* Carousel ----------*/
-
-
-
-
 
 
 .carousel{
@@ -313,4 +299,42 @@ color: gray;
 }
 .footer__copyright hr{
   border-top:1px solid #aaa;
+}
+
+/* ----------------Reponsive----------------- */
+@media screen and (max-width: 575px){
+  header .navbar-brand i {
+    font-size: 1rem;
+  }
+  header .navbar-brand span{
+    font-size: 1rem;
+  }
+.carousel .carousel-indicators{
+    bottom: 0;
+  }
+  #service .service__content{
+    flex-direction: column;
+    width: 80%;
+  }
+  #service .service__content .card{
+    margin: 2rem 2rem;
+  }
+}
+@media screen and (max-width: 767px){
+ 
+.carousel .carousel-indicators{
+    bottom: 0;
+  }
+  #service .service__content{
+    flex-direction: column;
+    width: 80%;
+  }
+  #service .service__content .card{
+    margin: 2rem 2rem;
+  }
+}
+@media screen and (max-width: 991px){
+  #service .service__content{
+    width: 100%;
+  }
 }
